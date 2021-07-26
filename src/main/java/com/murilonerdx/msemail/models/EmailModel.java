@@ -1,5 +1,6 @@
 package com.murilonerdx.msemail.models;
 
+import com.murilonerdx.msemail.enums.StatusEmail;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import javax.persistence.Column;
@@ -29,4 +30,6 @@ public class EmailModel implements Serializable {
   private String text;
   private LocalDateTime sendDateEmail;
   private StatusEmail statusEmail;
+
+
 }
