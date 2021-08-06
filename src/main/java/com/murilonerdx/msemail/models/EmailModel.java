@@ -3,6 +3,7 @@ package com.murilonerdx.msemail.models;
 import com.murilonerdx.msemail.enums.StatusEmail;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +22,7 @@ import lombok.NoArgsConstructor;
 public class EmailModel implements Serializable {
   @Id
   @GeneratedValue(strategy= GenerationType.AUTO)
-  private Long emailId;
+  private UUID emailId;
   private String ownerRef;
   private String emailFrom;
   private String emailTo;
